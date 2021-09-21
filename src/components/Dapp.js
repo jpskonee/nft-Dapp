@@ -82,9 +82,8 @@ function App() {
   useEffect(() => {
     if (blockchain.account !== "" && blockchain.smartContract !== null) {
       dispatch(fetchData(blockchain.account));
-    }
+    } // eslint-disable-next-line
   }, [blockchain.smartContract, dispatch]);
-
   return (
     <s.Screen style={{ backgroundColor: "var(--white)", marginTop: "4rem" }}>
       {blockchain.account === "" || blockchain.smartContract === null ? (
@@ -152,7 +151,7 @@ function App() {
             </s.TextTitle>
             <s.SpacerMedium />
 
-            {Number(data.totalSupply) == 25 ? (
+            {Number(data.totalSupply) === 25 ? (
               <>
                 <s.TextTitle style={{ textAlign: "center" }}>
                   The sale has ended.
@@ -165,6 +164,7 @@ function App() {
                     href={
                       "https://testnets.opensea.io/collection/artifact-keychain-v3"
                     }
+                    rel="noreferrer"
                   >
                     Opensea.io
                   </a>

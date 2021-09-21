@@ -94,7 +94,7 @@ const Footer = () => {
             © <strong>Artifact NFT</strong>
           </div>
           <div className="credits">
-            Designed by <a href="#"> Agho.dev </a>
+            Designed by <a href="www.google.com"> Agho.dev </a>
           </div>
         </div>
       </footer>

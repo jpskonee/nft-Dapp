@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {} from "react";
 // import NavbarModal from "./NavbarModal";
 import { Link } from "react-router-dom";
 
@@ -49,8 +49,8 @@ function NavBar() {
               </a>
             </li>
             <li>
-              <a class="nav-link scrollto" href="#">
-                Contract
+              <a class="nav-link scrollto" href="https://testnets.opensea.io/assets/0xd11850c3230f35b7d6e82e7f40122148b8646ac1/1">
+                Opensea
               </a>
             </li>
 
