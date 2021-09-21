@@ -36,8 +36,8 @@ export const StyledImg = styled.img`
 `;
 
 export const LogoImg = styled.img`
-  width: 25rem;
-  height: 30rem;
+  width: 18rem;
+  height: 20rem;
   margin-bottom: 1rem;
 `;
 
