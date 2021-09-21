@@ -5,7 +5,7 @@ import { fetchData } from "../redux/data/dataActions";
 import * as s from "../styles/globalStyles";
 import styled from "styled-components";
 import i1 from "../assets/images/1.gif";
-import icon from "../assets/images/nft-no-bg.png";
+import icon from "../assets/images/icon-n.png";
 
 export const StyledButton = styled.button`
   border-radius: 50px;
@@ -37,7 +37,7 @@ export const StyledImg = styled.img`
 
 export const LogoImg = styled.img`
   width: 25rem;
-  height: 18rem;
+  height: 30rem;
   margin-bottom: 1rem;
 `;
 
@@ -90,7 +90,7 @@ function App() {
         <s.Container flex={1} ai={"center"} jc={"center"}>
           <LogoImg alt={"logo"} src={icon} />
           <s.SpacerSmall />
-          <s.TextTitle style={{ textAlign: "center" }}>
+          <s.TextTitle style={{ textAlign: "center",}}>
             Mint Artifacts
           </s.TextTitle>
           <s.SpacerSmall />
