@@ -8,12 +8,14 @@ import i1 from "../assets/images/1.gif";
 import icon from "../assets/images/icon-n.png";
 
 export const StyledButton = styled.button`
+  padding: 8px;
   border-radius: 50px;
   border: none;
-  background-color: #0000ff;
-  padding: 1rem 1.5rem;
+  background-color: #1e9abd;
+  padding: 10px;
   font-weight: bold;
   color: #fff;
+  width: 100px;
   cursor: pointer;
   box-shadow: 0px 6px 0px -2px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 6px 0px -2px rgba(0, 0, 0, 0.3);
@@ -23,22 +25,16 @@ export const StyledButton = styled.button`
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
   }
-
-  :hover {
-    background: black;
-    border: 1px solid blue;
-  }
 `;
 
 export const StyledImg = styled.img`
-  width: 22rem;
-  height: 18rem;
+  width: 100px;
+  height: 100px;
 `;
 
 export const LogoImg = styled.img`
-  width: 18rem;
-  height: 20rem;
-  margin-bottom: 1rem;
+  width: 200px;
+  height: 200px;
 `;
 
 function App() {
@@ -47,7 +43,11 @@ function App() {
   const data = useSelector((state) => state.data);
   const [feedback, setFeedback] = useState("Maybe it's your lucky day.");
   const [claimingNft, setClaimingNft] = useState(false);
+  const [_amount, setAmount] = useState(1);
 
+  const onChange = (e) => {
+    setAmount(e.target.value);
+  };
   const claimNFTs = (_amount) => {
     if (_amount <= 0) {
       return;
@@ -58,7 +58,7 @@ function App() {
       .mint(blockchain.account, _amount)
       .send({
         gasLimit: "285000",
-        to: "0x1a94E0d181044aea45024F1a7A5adDf1e14704C0",
+        to: "0xc073081D0c277ee6c3880326d67f43a7A91e5b31",
         from: blockchain.account,
         value: blockchain.web3.utils.toWei(
           (0.08 * _amount).toString(),
@@ -84,13 +84,14 @@ function App() {
       dispatch(fetchData(blockchain.account));
     } // eslint-disable-next-line
   }, [blockchain.smartContract, dispatch]);
+
   return (
-    <s.Screen style={{ backgroundColor: "var(--white)", marginTop: "4rem" }}>
+    <s.Screen style={{ backgroundColor: "var(--white)" }}>
       {blockchain.account === "" || blockchain.smartContract === null ? (
         <s.Container flex={1} ai={"center"} jc={"center"}>
           <LogoImg alt={"logo"} src={icon} />
           <s.SpacerSmall />
-          <s.TextTitle style={{ textAlign: "center",}}>
+          <s.TextTitle style={{ textAlign: "center" }}>
             Mint Artifacts
           </s.TextTitle>
           <s.SpacerSmall />
@@ -115,15 +116,11 @@ function App() {
         </s.Container>
       ) : (
         <s.Container flex={1}>
-          <s.Container
-            style={{ minHeight: 80, marginTop: "4rem" }}
-            jc={"center"}
-            ai={"center"}
-          >
+          <s.Container style={{ minHeight: 80 }} jc={"center"} ai={"center"}>
             <s.TextTitle
               style={{ textAlign: "center", fontSize: 28, fontWeight: "bold" }}
             >
-              {/* Mint Artifacts */}
+              Mint Artifacts
             </s.TextTitle>
           </s.Container>
           <s.Container
@@ -133,6 +130,7 @@ function App() {
             style={{
               flexWrap: "wrap",
               overflow: "hidden",
+              maxHeight: "200px",
               minHeight: "200px",
             }}
           >
@@ -141,17 +139,13 @@ function App() {
           <s.SpacerSmall />
           <s.Container flex={1} ai={"center"} jc={"center"}>
             <s.TextTitle
-              style={{
-                textAlign: "center",
-                fontSize: "3rem",
-                fontWeight: "bold",
-              }}
+              style={{ textAlign: "center", fontSize: 35, fontWeight: "bold" }}
             >
-              {data.totalSupply}/25
+              {data.totalSupply}/5555
             </s.TextTitle>
             <s.SpacerMedium />
 
-            {Number(data.totalSupply) === 25 ? (
+            {Number(data.totalSupply) === 5555 ? (
               <>
                 <s.TextTitle style={{ textAlign: "center" }}>
                   The sale has ended.
@@ -162,7 +156,7 @@ function App() {
                   <a
                     target={"_blank"}
                     href={
-                      "https://testnets.opensea.io/collection/artifact-keychain-v3"
+                      "https://testnets.opensea.io/collection/artifact-keychain-v4"
                     }
                     rel="noreferrer"
                   >
@@ -172,8 +166,8 @@ function App() {
               </>
             ) : (
               <>
-                <s.TextTitle style={{ textAlign: "center", fontSize: "2rem" }}>
-                  1 Artifact = 0.08 ETH.
+                <s.TextTitle style={{ textAlign: "center" }}>
+                  {_amount} Artifacts costs {0.08 * _amount} ETH.
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription style={{ textAlign: "center" }}>
@@ -185,28 +179,41 @@ function App() {
                 </s.TextDescription>
                 <s.SpacerMedium />
                 <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                  <StyledButton
-                    disabled={claimingNft ? 1 : 0}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      claimNFTs(1);
-                    }}
-                  >
-                    {claimingNft ? "BUSY" : "MINT"}
-                  </StyledButton>
+                  <form action="">
+                    <input
+                      onChange={onChange}
+                      type="number"
+                      name=""
+                      id=""
+                      min="1"
+                      max="15"
+                      style={{
+                        width: "50px",
+                        height: "30px",
+                        margin: "0 20px 0 0",
+                        padding: "10px",
+                      }}
+                    />
+                    <StyledButton
+                      disabled={claimingNft ? 1 : 0}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        claimNFTs(_amount);
+                      }}
+                    >
+                      {claimingNft ? "BUSY" : `BUY${_amount}`}
+                    </StyledButton>
+                  </form>
                 </s.Container>
                 <s.SpacerLarge />
                 <s.SpacerLarge />
                 <s.Container
                   jc={"center"}
                   ai={"center"}
-                  style={{ width: "85%", marginBottom: "4rem" }}
+                  style={{ width: "70%" }}
                 >
                   <s.TextDescription
-                    style={{
-                      textAlign: "center",
-                      fontSize: "1rem",
-                    }}
+                    style={{ textAlign: "center", fontSize: 9 }}
                   >
                     Please make sure you are connected to the right network
                     (Ethereum Testnet) and the correct address. Please note:
@@ -214,7 +221,7 @@ function App() {
                   </s.TextDescription>
                   <s.SpacerSmall />
                   <s.TextDescription
-                    style={{ textAlign: "center", fontSize: "1rem" }}
+                    style={{ textAlign: "center", fontSize: 9 }}
                   >
                     We have set the gas limit to 285000 for the contract to
                     successfully mint your NFT. We recommend that you don't

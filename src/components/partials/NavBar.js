@@ -1,4 +1,4 @@
-import React, {} from "react";
+import React from "react";
 // import NavbarModal from "./NavbarModal";
 import { Link } from "react-router-dom";
 
@@ -49,7 +49,12 @@ function NavBar() {
               </a>
             </li>
             <li>
-              <a class="nav-link scrollto" href="https://testnets.opensea.io/assets/0xd11850c3230f35b7d6e82e7f40122148b8646ac1/1">
+              <a
+                class="nav-link scrollto"
+                href="https://testnets.opensea.io/assets/0xc073081d0c277ee6c3880326d67f43a7a91e5b31/2"
+                rel="noreferrer"
+                target={"_blank"}
+              >
                 Opensea
               </a>
             </li>
