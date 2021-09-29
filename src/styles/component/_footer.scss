@@ -12,6 +12,11 @@
 
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
+
+  @media screen and (max-width: 450px) {
+    text-align: center;
+    margin-top: 1rem;
+  }
 }
 
 #footer .footer-top .footer-info h3 {
@@ -75,6 +80,11 @@
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
   text-align: center;
+
+  @media screen and (max-width: 450px) {
+    text-align: center;
+    margin-top: 1rem;
+  }
 }
 
 #footer .footer-top .footer-links ul {
@@ -108,6 +118,11 @@
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
   text-align: right;
+
+  @media screen and (max-width: 450px) {
+    text-align: center;
+    margin-top: 1rem;
+  }
 }
 
 #footer .footer-top .footer-contact p {

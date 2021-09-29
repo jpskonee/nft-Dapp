@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import VideoModal from "../partials/VideoModal";
 import ReactTypingEffect from "react-typing-effect";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 function HeadBanner() {
   const [isOpen, setOpen] = useState(false);
@@ -29,10 +29,10 @@ function HeadBanner() {
           >
             {" "}
           </a>
-          <Link to="/app"> 
+          <Link to="/app">
             <a href="/" class="about-btn scrollto">
-            BUY NOW
-          </a>
+              BUY NOW
+            </a>
           </Link>
           <div id="toShop"></div>
         </div>

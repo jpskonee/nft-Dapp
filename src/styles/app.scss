@@ -1,3 +1,10 @@
+$blue: #0000ff;
+$red: #ff016b;
+$yellow: #ffd700;
+$green: #009515;
+$grey: #eef0f2;
+$black: #353840;
+
 @import "./component/navbar";
 @import "./component/headerbanner";
 @import "./component/footer";
@@ -5,3 +12,4 @@
 @import "./component/freqasked";
 @import "./component/sectionheader";
 @import "./component/whatwedo";
+@import "./component/dapp";

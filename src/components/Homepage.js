@@ -4,13 +4,13 @@ import SchedulePage from "./partials/SchedulePage";
 import ContactPage from "./partials/ContactPage";
 import WhatWeDo from "./partials/WhatWeDo";
 import FreqAskedQuest from "../components/partials/FreqAskedQuest";
-import Dapp from "./Dapp";
+import Dapp from "./TestDapp";
 
 const Homepage = () => {
   return (
     <div>
       <HeadBanner />
-      <div style={{ marginTop: "2rem" }}>
+      <div style={{ marginTop: "5rem" }}>
         <Dapp />
       </div>
       <WhatWeDo />

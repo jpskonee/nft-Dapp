@@ -52,8 +52,8 @@ function NavBar() {
               <a
                 class="nav-link scrollto"
                 href="https://testnets.opensea.io/assets/0xc073081d0c277ee6c3880326d67f43a7a91e5b31/2"
-                rel="noreferrer"
                 target={"_blank"}
+                rel="noreferrer"
               >
                 Opensea
               </a>

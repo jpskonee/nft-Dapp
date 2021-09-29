@@ -1,0 +1,291 @@
+.shop-base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem auto 5rem;
+  text-align: center;
+
+  .connect-div {
+    .connect-img {
+      height: 25rem;
+      width: 24rem;
+      margin-bottom: 1rem;
+      animation-name: wheel;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-delay: 2s;
+
+      @media screen and (max-width: 450px) {
+        height: 20rem;
+        width: 18rem;
+      }
+
+      @keyframes wheel {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    }
+    .connect-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 2px;
+      margin-top: 0.5rem;
+
+      @media screen and (max-width: 450px) {
+        font-size: 2rem;
+      }
+    }
+
+    .connect-desc {
+      font-size: 1rem;
+      color: $blue;
+      letter-spacing: 3px;
+
+      @media screen and (max-width: 450px) {
+        letter-spacing: 0px;
+      }
+    }
+    .connect-btn {
+      cursor: pointer;
+      background: $blue;
+      padding: 1rem 0.5rem;
+      border-radius: 10px;
+      margin: 1rem auto;
+      color: white;
+      width: 9rem;
+      border: 2px groove black;
+    }
+
+    .connect-btn:hover {
+      background: black;
+    }
+    .connect-error-msg {
+      font-size: 1.2rem;
+      color: $red;
+      letter-spacing: 3px;
+    }
+  }
+
+  .mint-div {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 2rem 1rem 1rem;
+    width: 90%;
+
+    @media screen and (max-width: 450px) {
+      margin: 0;
+      padding: 4rem 1rem;
+    }
+
+    .mint-img {
+      height: 80%;
+      width: 85%;
+
+      @media screen and (max-width: 450px) {
+        height: 14rem;
+        width: 100%;
+      }
+    }
+
+    .mint-supply {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-top: 1rem;
+    }
+
+    .mint-sales-end {
+      color: $red;
+      font-size: 1.5rem;
+    }
+    .mint-details {
+      text-align: left;
+      padding: 1rem;
+      border: 1px $grey solid;
+
+      @media screen and (max-width: 450px) {
+        text-align: center;
+      }
+
+      .mint-detail-title {
+        font-size: 2rem;
+        color: $black;
+        font-weight: 600;
+        padding: 1rem 0.5rem;
+        border: 1px solid $grey;
+      }
+
+      .mint-detail-powered {
+        font-size: 1rem;
+        font-weight: 600;
+        color: grey;
+        padding: 0.3rem 0.5rem;
+        border: 1px solid $grey;
+      }
+
+      .mint-details-date {
+        padding: 0.5rem 0.5rem;
+        border: 1px solid $grey;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+      }
+
+      .mint-details-date-text {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: $red;
+        margin-left: 0.8rem;
+
+        @media screen and (max-width: 450px) {
+          font-size: 1.3rem;
+        }
+      }
+      .mint-current-price-div {
+        padding: 0.5rem 0.5rem;
+        border: 1px solid $grey;
+      }
+      .mint-current-price-icon {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+
+        @media screen and (max-width: 450px) {
+          justify-content: center;
+        }
+      }
+
+      .mint-current-price-fee {
+        color: $black;
+        margin-left: 1rem;
+        font-size: 2rem;
+      }
+
+      .mint-current-price-extra {
+        margin-top: 0.4rem;
+        color: grey;
+        font-style: oblique;
+      }
+    }
+
+    .mint-counter-base {
+      padding: 0.5rem 0.5rem;
+      border: 1px solid $grey;
+
+      @media screen and (max-width: 450px) {
+        text-align: center;
+      }
+
+      .mint-counter-div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0.8rem 0 1rem;
+
+        @media screen and (max-width: 450px) {
+          justify-content: space-evenly;
+        }
+      }
+      .mint-counter-btn {
+        padding: 0.3rem 2rem;
+        background: $black;
+        color: white;
+        border-radius: 10px;
+        font-size: 2rem;
+        font-weight: 800;
+
+        @media screen and (max-width: 450px) {
+          padding: 0.3rem 2rem;
+        }
+      }
+      .mint-counter-btn:hover {
+        background-color: $blue;
+        transform: translate(2px, -1px);
+      }
+      .mint-counter-btn:active {
+        background-color: $grey;
+      }
+      .mint-counter-amount {
+        font-size: 2rem;
+        font-weight: 800;
+        color: $black;
+
+        @media screen and (max-width: 450px) {
+          text-align: center;
+        }
+      }
+
+      .mint-counter-total {
+        text-align: right;
+
+        @media screen and (max-width: 450px) {
+          text-align: center;
+        }
+      }
+
+      .mint-counter-total-title {
+        color: gray;
+
+        @media screen and (max-width: 450px) {
+          text-align: center;
+        }
+      }
+
+      .mint-counter-total-img-div {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 0.7rem;
+        margin-right: 0.1rem;
+
+        @media screen and (max-width: 450px) {
+          justify-content: center;
+        }
+      }
+    }
+    .mint-counter-buy-div {
+      padding: 1rem 0.5rem;
+      border: 1px solid $grey;
+    }
+
+    .mint-counter-buy-btn {
+      padding: 0.6rem 4rem;
+      background: $blue;
+      color: white;
+      border-radius: 10px;
+      font-size: 1.6rem;
+      font-weight: 800;
+
+      @media screen and (max-width: 450px) {
+        width: 100%;
+      }
+    }
+
+    .mint-counter-buy-btn:hover {
+      background-color: $black;
+      transform: translate(2px, -1px);
+    }
+    .mint-counter-buy-btn:active {
+      background-color: $grey;
+    }
+  }
+}
+
+.mint-foot-note {
+  width: 100%;
+  text-align: center;
+  color: gray;
+  margin-top: 1rem;
+}
