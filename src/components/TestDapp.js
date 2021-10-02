@@ -10,6 +10,7 @@ import { Grid } from "@material-ui/core";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import AlarmIcon from "@material-ui/icons/Alarm";
 import Countdown from "react-countdown";
+import CountDownClock from "./partials/CountDownClock";
 
 export const StyledButton = styled.button`
   padding: 8px;
@@ -92,27 +93,37 @@ function App() {
   return (
     <div className="shop-base">
       {blockchain.account === "" || blockchain.smartContract === null ? (
-        <div className="connect-div">
-          <div>
-            <img className="connect-img" alt={"logo"} src={icon} />
-          </div>
-          <div className="connect-title">Mint Artifacts</div>
-          <div className="connect-desc">
-            Connect to the Ethereum Rinkeby network
-          </div>
-          <div
-            className="connect-btn"
-            onClick={(e) => {
-              e.preventDefault();
-              dispatch(connect());
-            }}
-          >
-            CONNECT
-          </div>
-          {blockchain.errorMsg !== "" ? (
-            <div className="connect-error-msg">{blockchain.errorMsg}</div>
-          ) : null}
-        </div>
+        <Grid style={{display: "flex", jusitfyContents: "center", alignItems: "center"}} container>
+          <Grid item md={7} xs={12}>
+            {" "}
+            <div className="connect-div wow fadeInLeft"
+        data-wow-duration="1s"
+        data-wow-delay="0.7s">
+              <div>
+                <img className="connect-img" alt={"logo"} src={icon} />
+              </div>
+              <div className="connect-title">Mint Artifacts</div>
+              <div className="connect-desc">
+                Connect to the Ethereum Rinkeby network
+              </div>
+              <div
+                className="connect-btn"
+                onClick={(e) => {
+                  e.preventDefault();
+                  dispatch(connect());
+                }}
+              >
+                CONNECT
+              </div>
+              {blockchain.errorMsg !== "" ? (
+                <div className="connect-error-msg">{blockchain.errorMsg}</div>
+              ) : null}
+            </div>
+          </Grid>
+          <Grid item md={5} xs={12}>
+            <CountDownClock />
+          </Grid>
+        </Grid>
       ) : (
         <Grid className="mint-div" container>
           <Grid item md={6} xs={12}>

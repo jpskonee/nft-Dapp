@@ -1,24 +1,33 @@
 import React from "react";
 import HeadBanner from "./partials/HeadBanner";
-import SchedulePage from "./partials/SchedulePage";
-import ContactPage from "./partials/ContactPage";
-import WhatWeDo from "./partials/WhatWeDo";
+import FreqAskedQuestionNew from "../components/partials/FreqAskedQuestionNew";
 import FreqAskedQuest from "../components/partials/FreqAskedQuest";
 import Dapp from "./TestDapp";
+import NftGallery from "./partials/NftGallery";
+import RoadMap from "./partials/RoadMap";
+import HeaderBannerNew from "./partials/HeaderBannerNew";
+import BenefitSection from "./partials/BenefitSection";
+import NewsLetter from "./partials/NewsLetter";
+import { Container } from "@material-ui/core";
+import TestDapp from "./TestDapp";
 
 const Homepage = () => {
   return (
     <div>
       <HeadBanner />
-      <div style={{ marginTop: "5rem" }}>
-        <Dapp />
-      </div>
-      <WhatWeDo />
-      <SchedulePage />
+      {/* <HeaderBannerNew /> */}
+      {/* <Dapp /> */}
+      <TestDapp />
+      <NftGallery />
+      <BenefitSection />
 
-      <FreqAskedQuest />
+      <RoadMap />
 
-      <ContactPage />
+      <FreqAskedQuestionNew />
+
+      <NewsLetter />
+
+      {/* <FreqAskedQuest /> */}
     </div>
   );
 };

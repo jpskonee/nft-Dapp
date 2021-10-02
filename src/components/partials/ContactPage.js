@@ -1,18 +1,20 @@
 import React from "react";
-import img4 from "../assets/img/bag-nft.jpg";
+import img4 from "../assets/img/5.jpeg";
 import SectionHeader from "./SectionHeader";
+import BenefitSection from "./BenefitSection";
+import FreqAskedQuestionNew from "./FreqAskedQuestionNew";
 
 function ContactPage() {
   return (
     <div>
       <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
+        <div  style={{marginTop: "10rem"}} class="container" data-aos="fade-up">
           <SectionHeader
             heading="Sign up for more info"
             slogan="In depth product info, roadmap, collaborations, pre sale date"
           />
 
-          <div class="row">
+          <div  class="row">
             <div
               class="col-lg-5 d-flex align-items-stretch"
               data-aos="fade-up"
@@ -90,9 +92,10 @@ function ContactPage() {
                   <textarea
                     class="form-control"
                     name="message"
-                    rows="10"
+                    rows="8"
                     required
                     autoComplete="Off"
+                    placeholder="We want to hear from you...!"
                   ></textarea>
                 </div>
                 <div class="my-3">
@@ -110,6 +113,8 @@ function ContactPage() {
           </div>
         </div>
       </section>
+      <BenefitSection />
+      <FreqAskedQuestionNew />
     </div>
   );
 }

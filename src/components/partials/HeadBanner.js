@@ -7,18 +7,18 @@ function HeadBanner() {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <div>
+    <div class="mb-20">
       <div id="topTop"></div>
       <section id="hero">
         <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
           <h1 class="mb-4 pb-0">
-            THE <ReactTypingEffect text={["FIRST", "BEST", "FINEST"]} />{" "}
-            PHYSICAL
+            THE <ReactTypingEffect text={["FIRST", "RARE", "BEST"]} /> PHYSICAL
             <br />
             NFT KEYCHAIN
           </h1>
           <p class="mb-4 pb-0">
-            Showing off your favourite Artwork and Collections...
+            Display your favorite NFT, advertise the next BIG project, share
+            emergency documents
           </p>
           <a
             href="#here"

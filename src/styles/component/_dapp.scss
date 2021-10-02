@@ -3,33 +3,20 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 2rem auto 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
   text-align: center;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 
   .connect-div {
     .connect-img {
       height: 25rem;
       width: 24rem;
       margin-bottom: 1rem;
-      animation-name: wheel;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      animation-delay: 2s;
 
       @media screen and (max-width: 450px) {
-        height: 20rem;
-        width: 18rem;
-      }
-
-      @keyframes wheel {
-        from {
-          transform: rotate(0deg);
-        }
-
-        to {
-          transform: rotate(360deg);
-        }
+        height: 16rem;
+        width: 15rem;
       }
     }
     .connect-title {

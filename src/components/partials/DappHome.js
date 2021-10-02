@@ -1,12 +1,16 @@
 import React from "react";
 import TestDapp from "../TestDapp";
-import FreqAskedQuest from "./FreqAskedQuest";
+import NftGallery from "./NftGallery";
+import BenefitSection from "./BenefitSection";
+import FreqAskedQuestionNew from "./FreqAskedQuestionNew";
 
 function DappHome() {
   return (
     <div style={{ marginTop: "8rem" }}>
       <TestDapp />
-      <FreqAskedQuest />
+      <NftGallery />
+      <BenefitSection />
+      <FreqAskedQuestionNew />
     </div>
   );
 }

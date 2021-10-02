@@ -1,0 +1,84 @@
+/* i.text colors */
+$all-text-color: (
+	color-light-white: #ececec,
+	color-white: #fff,
+	color-white-dark: #fefefe,
+	color-black: #222,
+	color-tint-black: #444,
+	color-light-black: #333,
+	color-black-tints: #040404,
+    color-grey: #777,
+	color-dove-grey: #666,
+	color-dark-gray: #aaa,
+	color-light-gray: #999,
+	color-light-dark-gray: #888,
+	color-very-light-gray: #ccc,
+	color-grey-tints: #e5e5e5,
+	color-ruby: #e94a8a,
+	color-light-ruby: #e64988,
+	color-blue: #7f7de0,
+	color-light-blue: #4845b4,	
+	color-gray-goose: #bab9ec,
+	color-light-yellow: #c8dc01,
+	color-dark-yellow: #ffc64d,
+	color-lavender: #ecebfa,
+	color-fb: #3b5998,
+	color-twitter: #1da1f2,
+	color-google-plus: #dd4b39,
+	color-linkedin: #0077b5,
+	color-dark-black: #202020,
+	color-red: #ff0000,	
+);
+
+/* ii.background color */
+$all-bg-color: (
+	bg-white: #fff,
+	bg-lightdark-white: #f8fafb,
+	bg-dark-white: #ebebeb,
+	bg-light-white: #f3f3f3,
+	bg-dark-light-white: #f9f9f9,
+	bg-black: #222,
+	bg-light-black: #000,
+    bg-gray: #ecebfb,
+	bg-light-gray: #d1d1d1,
+    bg-blue: #7f7de0,
+	bg-ruby: #e94a8a,
+	bg-ruby-hover: #e2196a,
+	bg-light-ruby: #e64988,
+	bg-light-blue: #4845b4,
+	bg-pink-blue: #7f7dcb,
+	bg-dark-blue: #2d6a97,
+	bg-light-shade: #00c2f0,
+	bg-lavender: #ecebfa,
+	bg-fb: #3b5998,
+	bg-orange: #e46c2b,
+	bg-orange-hover: #e46c2b,
+	bg-orange-dark: #ea5a4f,
+
+	bg-chart-green: #4fc489,
+	bg-chart-blue: #0ba1d6,
+	bg-chart-yellow: #efe943,
+	bg-chart-burnt: #e9734a,
+	bg-chart-forceblue: #5990a4,
+);
+
+/* ii.mixin css */
+@mixin border-radius($tl:null, $tr:null, $br:null, $bl:null, $b: null, $bt: null, $bc: null) {
+    border: $b $bt $bc;
+    border-top-left-radius: $tl;
+    border-top-right-radius: $tr;
+    border-bottom-right-radius: $br;
+    border-bottom-left-radius: $bl;
+}
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+    -webkit-transition: $what $time $how;
+    -moz-transition:    $what $time $how;
+    -ms-transition:     $what $time $how;
+    -o-transition:      $what $time $how;
+    transition:         $what $time $how;
+}
+@mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
+	-webkit-box-shadow: $x-axis $y-axis $blur $color;
+	-moz-box-shadow: $x-axis $y-axis $blur $color;
+	box-shadow: $x-axis $y-axis $blur $color;
+}

@@ -13,7 +13,7 @@ function NavBar() {
   return (
     <header
       style={{
-        background: "#101522",
+        background: "#0f0e22",
         position: "fixed",
       }}
       id="header"
@@ -39,14 +39,18 @@ function NavBar() {
               </a>
             </li>
             <li>
+              <Link  to="roadmap">
               <a class="nav-link scrollto" href="#toSchedule">
-                Timeline
+                RoadMap
               </a>
+              </Link>
             </li>
             <li>
+              <Link to="/contact">
               <a class="nav-link scrollto" href="#toContact">
-                Q & A
+               Join Now
               </a>
+              </Link>
             </li>
             <li>
               <a
@@ -55,7 +59,7 @@ function NavBar() {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                Opensea
+                Buy On Opensea
               </a>
             </li>
 

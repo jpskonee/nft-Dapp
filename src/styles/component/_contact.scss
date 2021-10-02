@@ -1,6 +1,7 @@
 .contact {
   margin-top: 3rem;
   margin-bottom: 3rem;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 .contact .info {
   border-top: 3px solid #131df4;
@@ -136,6 +137,8 @@
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
+  border: 1px groove #141636;
+  margin-top: 0.5rem;
 }
 
 .contact .php-email-form input {
