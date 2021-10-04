@@ -6,23 +6,23 @@ const NewsLetter = () => {
   return (
     <div class="newsletter-container">
       <div class="container">
-        <div class="row align-items-center pt-110 pb-110 mobile-pt-60 mobile-pb-60">
+        <div class="row align-items-center pt-70 mobile-pt-60 mobile-pb-30">
           <div class="col-sm-12 col-md-9 mobile-pb-30">
             <div
               class="newsletter-text text-white wow fadeInLeft"
               data-wow-duration="1s"
               data-wow-delay="0.2s"
             >
-              <h4>Connect Now</h4>
-              <h2>Get Regular Updates and Offer!</h2>
-              <p>
+              <h4 style={{color: "grey"}}>Connect Now</h4>
+              <h2 style={{color: "white"}}>Get Regular Updates and Offer!</h2>
+              <p style={{color: "grey"}}>
                 In depth product info, roadmap, collaborations, pre sale date
               </p>
             </div>
           </div>
           <div class="col-sm-12 col-md-3 mobile-pb-30">
             <Link to="/contact">
-              <Button size="large" variant="contained" color="primary">
+              <Button size="large" variant="contained" style={{color: "white", background: "blue", border: "1px white solid"}} >
                 {" "}
                 Join Now{" "}
               </Button>

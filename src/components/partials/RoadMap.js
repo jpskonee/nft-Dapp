@@ -11,8 +11,8 @@ function RoadMap() {
               data-wow-duration="1s"
               data-wow-delay=".2s"
             >
-              <h3>How it Goes</h3>
-              <h2>The Road Map</h2>
+              <h3  style={{color: "grey"}}>How it Goes</h3>
+              <h2  style={{color: "white"}}>The Road Map</h2>
             </div>
           </div>
 

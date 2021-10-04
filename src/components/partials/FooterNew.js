@@ -4,7 +4,7 @@ const FooterNew = () => {
 
   const year = new Date().getFullYear();
   return (
-    <footer class="footer-container footer-curve">
+    <footer class="footer-container">
       <div class="container">
         <div class="row">
           <div class="col-12">

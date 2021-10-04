@@ -180,7 +180,7 @@ function App() {
                   </>
                 ) : (
                   <>
-                    <s.TextTitle style={{ textAlign: "center" }}>
+                    <s.TextTitle style={{ textAlign: "center", color: "white" }}>
                       {_amount} Artifacts = {0.08 * _amount} ETH.
                     </s.TextTitle>
                     <s.SpacerXSmall />

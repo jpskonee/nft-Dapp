@@ -10,7 +10,7 @@ const NftGallery = () => {
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-6 mobile-pb-10 invented-cont">
                         <div class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-                            <h2>Rock your Keychain Anywhere, Anyhow, and Everywhere. </h2>
+                            <h2 style={{color: "white"}}>Rock your Keychain Anywhere, Anyhow, and Everywhere. </h2>
                             <p>Introducing the Artifact Keychain, the world's first NFT keychain & the perfect way to display your NFT's.</p>
                         </div>
                     </div>

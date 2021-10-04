@@ -5,6 +5,11 @@ $green: #009515;
 $grey: #eef0f2;
 $black: #353840;
 
+body {
+ 
+  background: #191628;
+}
+
 @import "./component/navbar";
 @import "./component/headerbanner";
 @import "./component/footer";

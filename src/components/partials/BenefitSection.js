@@ -4,7 +4,7 @@ import img from "../../assets/images/icon-n.png";
 
 const BenefitSection = () => {
   return (
-    <div class="benefits-container mt-30 overflow-hidden">
+    <div class="benefits-container overflow-hidden">
       <div class="container">
         <Container maxWidth="lg">
           <div class="row pt-110 mobile-pt-60">

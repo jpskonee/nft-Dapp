@@ -6,7 +6,8 @@
   padding-top: 2.5rem;
   padding-bottom: 2rem;
   text-align: center;
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  color: white;
 
   .connect-div {
     .connect-img {
@@ -106,7 +107,7 @@
 
       .mint-detail-title {
         font-size: 2rem;
-        color: $black;
+        color: white;
         font-weight: 600;
         padding: 1rem 0.5rem;
         border: 1px solid $grey;
@@ -141,6 +142,7 @@
       .mint-current-price-div {
         padding: 0.5rem 0.5rem;
         border: 1px solid $grey;
+        color: gray;
       }
       .mint-current-price-icon {
         display: flex;
@@ -148,6 +150,7 @@
         align-items: center;
         font-size: 1rem;
         margin-top: 0.5rem;
+        color: gray;
 
         @media screen and (max-width: 450px) {
           justify-content: center;
@@ -155,14 +158,14 @@
       }
 
       .mint-current-price-fee {
-        color: $black;
+        color: white;
         margin-left: 1rem;
         font-size: 2rem;
       }
 
       .mint-current-price-extra {
         margin-top: 0.4rem;
-        color: grey;
+        color: white;
         font-style: oblique;
       }
     }
@@ -170,6 +173,7 @@
     .mint-counter-base {
       padding: 0.5rem 0.5rem;
       border: 1px solid $grey;
+      color: white;
 
       @media screen and (max-width: 450px) {
         text-align: center;
@@ -180,6 +184,7 @@
         justify-content: space-around;
         align-items: center;
         margin: 0.8rem 0 1rem;
+        color: white;
 
         @media screen and (max-width: 450px) {
           justify-content: space-evenly;
@@ -187,7 +192,7 @@
       }
       .mint-counter-btn {
         padding: 0.3rem 2rem;
-        background: $black;
+        background: black;
         color: white;
         border-radius: 10px;
         font-size: 2rem;
@@ -198,16 +203,17 @@
         }
       }
       .mint-counter-btn:hover {
-        background-color: $blue;
+        background-color: white;
+        color: black;
         transform: translate(2px, -1px);
       }
       .mint-counter-btn:active {
-        background-color: $grey;
+        background-color: grey;
       }
       .mint-counter-amount {
         font-size: 2rem;
         font-weight: 800;
-        color: $black;
+        color: white;
 
         @media screen and (max-width: 450px) {
           text-align: center;
@@ -261,7 +267,8 @@
     }
 
     .mint-counter-buy-btn:hover {
-      background-color: $black;
+      background-color: white;
+      color: black;
       transform: translate(2px, -1px);
     }
     .mint-counter-buy-btn:active {

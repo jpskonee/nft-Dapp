@@ -1297,8 +1297,13 @@
 	    padding: 0 0 0 28px;
 	}
 }
+
+@media screen and (min-width: 700px) {
+.footer-container { padding-top:4rem; }
+
+}
+
 @media screen and (max-width: 991px) {
-	.footer-container { padding-top: 130px; }
 	.footer-container2 { padding-top: 200px; }
 	.footer-container3 {
 	    padding-top: 60px;
