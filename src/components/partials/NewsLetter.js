@@ -1,6 +1,7 @@
 import React from "react";
-import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import ColourHeaderText from "../shared/ColourHeaderText";
+import ColourTag from "../shared/ColourTag";
 
 const NewsLetter = () => {
   return (
@@ -13,19 +14,16 @@ const NewsLetter = () => {
               data-wow-duration="1s"
               data-wow-delay="0.2s"
             >
-              <h4 style={{color: "grey"}}>Connect Now</h4>
-              <h2 style={{color: "white"}}>Get Regular Updates and Offer!</h2>
-              <p style={{color: "grey"}}>
+              <h4 style={{ color: "grey" }}>Connect Now</h4>
+              <ColourHeaderText text="Get Regular Updates and Offer!" />
+              <p style={{ color: "grey" }}>
                 In depth product info, roadmap, collaborations, pre sale date
               </p>
             </div>
           </div>
           <div class="col-sm-12 col-md-3 mobile-pb-30">
             <Link to="/contact">
-              <Button size="large" variant="contained" style={{color: "white", background: "blue", border: "1px white solid"}} >
-                {" "}
-                Join Now{" "}
-              </Button>
+              <ColourTag color1="#131DF4" color2="#FF006A" text="Join Now!!!" />
             </Link>
           </div>
         </div>

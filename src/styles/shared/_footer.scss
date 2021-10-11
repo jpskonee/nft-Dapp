@@ -1,0 +1,12 @@
+.footer {
+  color: white;
+  font-size: 1.2rem;
+  min-width: 100%;
+  text-align: center;
+  margin: 10rem auto 3rem;
+
+  @media screen and (max-width: 450px) {
+    font-size: 0.9rem;
+    margin: 6rem auto 2rem;
+  }
+}

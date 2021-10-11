@@ -1,0 +1,41 @@
+.colour-tag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2rem;
+  padding: 0.7rem 0.8rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+
+  @media screen and (max-width: 770px) {
+    padding: 0.8rem 0.6rem;
+    flex-wrap: wrap;
+    display: inline-flex;
+  }
+  @media screen and (max-width: 450px) {
+    min-width: 43%;
+    padding: 0.8rem 0.6rem;
+    flex-wrap: wrap;
+    display: inline-flex;
+  }
+  @media screen and (max-width: 380px) {
+    min-width: 42%;
+    padding: 0.8rem 0.6rem;
+  }
+
+  @media screen and (max-width: 330px) {
+    min-width: 41%;
+    padding: 0.7rem 0.5rem;
+  }
+}
+
+.colour-tag:hover {
+  opacity: 0.8;
+}
+.colour-tag:active {
+  opacity: 0.6;
+}

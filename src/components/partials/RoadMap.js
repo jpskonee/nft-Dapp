@@ -11,8 +11,8 @@ function RoadMap() {
               data-wow-duration="1s"
               data-wow-delay=".2s"
             >
-              <h3  style={{color: "grey"}}>How it Goes</h3>
-              <h2  style={{color: "white"}}>The Road Map</h2>
+              <h3 style={{ color: "grey" }}>How it Goes</h3>
+              <h2 style={{ color: "white" }}>The Road Map</h2>
             </div>
           </div>
 
@@ -30,7 +30,13 @@ function RoadMap() {
                       <div class="timeline-cont-info">
                         <h5>Idea Generation</h5>
                         <p>
-                          When I bought my first NFT I immediately wanted a way to show off my new art with the world while also being fashionable. People couldn't really see my NFT on my Apple Watch or phone and there was no way to verify the NFT was mine. And so the idea of a keychain exclusively for verifying and displaying NFTs was born.
+                          When I bought my first NFT I immediately wanted a way
+                          to show off my new art with the world while also being
+                          fashionable. People couldn't really see my NFT on my
+                          Apple Watch or phone and there was no way to verify
+                          the NFT was mine. And so the idea of a keychain
+                          exclusively for verifying and displaying NFTs was
+                          born.
                         </p>
                       </div>
                     </div>
@@ -47,7 +53,13 @@ function RoadMap() {
                       <div class="timeline-cont-info">
                         <h5>Concept Making</h5>
                         <p>
-                          The Artifact Keychain is built to connect the unique user to the Artifact Marketplace via a QR code located on the back of the device; here is where you can create a new profile and connect your crypto wallet to verify your NFT collection. Once verified you will be able to store COPIES of your NFT on the Artifact device. 
+                          The Artifact Keychain is built to connect the unique
+                          user to the Artifact Marketplace via a QR code located
+                          on the back of the device; here is where you can
+                          create a new profile and connect your crypto wallet to
+                          verify your NFT collection. Once verified you will be
+                          able to store COPIES of your NFT on the Artifact
+                          device.
                         </p>
                       </div>
                     </div>
@@ -107,7 +119,7 @@ function RoadMap() {
                     </div>
                   </div>
                 </li>
-                <li class="road-map-row circle-row2">
+                <li class="road-map-row circle-row">
                   <div
                     class="road-map-event event wow bounceInRight"
                     data-wow-duration="1s"

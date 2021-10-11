@@ -1,0 +1,28 @@
+.colour-header {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 89.6px;
+  font-style: normal;
+  background: linear-gradient(80deg, #1542d4, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media screen and (max-width: 1050px) {
+    font-size: 4.5rem;
+    line-height: 6rem;
+  }
+  @media screen and (max-width: 770px) {
+    padding: 0rem 2rem;
+    font-size: 3.5rem;
+    line-height: 70.6px;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-top: 0.6rem;
+  }
+  @media screen and (max-width: 380px) {
+    font-size: 1.5rem;
+    padding-top: 0rem;
+  }
+}

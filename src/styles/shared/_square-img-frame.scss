@@ -1,0 +1,39 @@
+.img-card {
+  background: white;
+  display: inline-block;
+  padding: 0.8rem 0.8rem 0.5rem;
+
+  .img-active {
+    img {
+      height: 390px;
+      width: 400px;
+    }
+  }
+
+  .img-passive {
+    img {
+      height: 300px;
+      width: 300px;
+    }
+  }
+
+  .img-detail1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(80, 78, 78);
+    font-size: 01rem;
+  }
+  .img-detail2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    .img-detail-prop {
+      color: #01abbf;
+    }
+  }
+}

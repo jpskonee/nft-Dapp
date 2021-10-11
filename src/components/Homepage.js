@@ -18,6 +18,7 @@ const Homepage = () => {
       {/* <HeaderBannerNew /> */}
       {/* <Dapp /> */}
       <TestDapp />
+
       <NftGallery />
       <BenefitSection />
 

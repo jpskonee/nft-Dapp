@@ -775,15 +775,15 @@ a.btn-scroll span::before {
 
 /*  4.2.token-sale */
 .token-sale {
-  background: #201e4b;
-  width: 100%;
+  background: #6d6d6e42;
+  width: 96%;
   max-width: 460px;
   padding: 40px 36px 45px 36px;
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 2px );
--webkit-backdrop-filter: blur( 2px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .token-sale .clocktimes {
   background: #fff;
@@ -1345,7 +1345,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 /*-------------------------*/
 .benefits-container {
   /* background-image: url(../images/bgr-benefits.png); */
-  background-color: #141636;
+  background-color: #0f0e22;
   background-position: center bottom;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -1406,14 +1406,34 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .bnf-col-row {
   overflow: hidden;
+
+  @media screen and (max-width: 1050px) {
+    font-size: 4.5rem;
+    line-height: 6rem;
+  }
+  @media screen and (max-width: 770px) {
+    padding: 0rem 2rem;
+    font-size: 3.5rem;
+    line-height: 70.6px;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-top: 0.6rem;
+  }
+  @media screen and (max-width: 380px) {
+    font-size: 1.5rem;
+    padding-top: 0rem;
+  }
 }
+
 .bnf-col-img {
-  background: #fff;
+  background: linear-gradient(80deg, blue, red);
   width: 58px;
   height: 58px;
   line-height: 58px;
   float: left;
-  color: #4845b4;
+  color: white;
   font-size: 15px;
   text-align: center;
   margin-top: 3px;
@@ -1431,13 +1451,12 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 /*  13.timeline        */
 /*---------------------*/
 .roadmap-container {
-  background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
 }
 
 .road-map-timeline {
   width: 100%;
   margin: 0 auto;
-
 }
 .road-map-timeline .more-event {
   display: block;
@@ -1482,7 +1501,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .road-map-tl-event::after {
   content: "\f078";
-  background: #e94a8a;
+  background: linear-gradient(80deg, blue, red);
   display: block;
   width: 48px;
   height: 48px;
@@ -1514,7 +1533,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   top: 5%;
   right: -19px !important;
   z-index: 2;
-  background: #201e4b;
+  background: linear-gradient(80deg, blue, red);
   -webkit-border-radius: 100%;
   border-radius: 100%;
   -webkit-transition: 0.3s;
@@ -1530,7 +1549,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   top: 5%;
 }
 .road-map-tl-event li:hover:before {
-  background-color: #201e4b;
+  background-color: #0f0e22;
 }
 .road-map-tl-event li:nth-child(even) .event {
   padding-left: 116px;
@@ -1548,7 +1567,9 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   content: "";
   width: 3px;
   height: 75%;
-  background: #201e4b;
+  /* background: black; */
+
+  background: linear-gradient(80deg, blue, red);
   position: absolute;
   right: -2px;
   top: 33px;
@@ -1569,7 +1590,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   content: "";
   width: 120px;
   height: 3px;
-  background: #201e4b;
+
+  background: linear-gradient(80deg, blue, red);
   position: absolute;
   top: 36px;
   left: -120px;
@@ -1640,7 +1662,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .content {
 }
 .content h3 {
-  background: #201e4b;
+  background: #0f0e22;
   margin: 0;
   padding: 22px 10px 26px 10px;
   color: #fff;
@@ -1657,7 +1679,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .content h5 {
   margin: 0;
-  color: #222;
+
+  background: linear-gradient(80deg, blue, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 24px;
   line-height: normal;
   padding-bottom: 20px;
@@ -1829,11 +1854,14 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 /*  17.tab_container frequently     */
 /*----------------------------------*/
 .faq {
-
-  background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
 }
-ul.resp-tabs-list,
 
+.faq-list {
+  color: white;
+}
+
+ul.resp-tabs-list,
 p {
   margin: 0px;
   padding: 0px;
@@ -1843,7 +1871,7 @@ ul.resp-tabs-list {
 }
 .resp-tabs-list li {
   font-weight: 500;
-  color: #aaa;
+  color: RED;
   font-size: 18px;
   display: inline-block;
   padding: 13px 24px 13px 24px;
@@ -2206,7 +2234,7 @@ h2.resp-accordion:first-child {
 /*  20.newsletter    */
 /*-------------------*/
 .newsletter-content {
-  background: #7f7de0;
+  background: #0f0e22;
   width: 100%;
   max-width: 970px;
   margin: 0 auto -75px;
@@ -2279,7 +2307,7 @@ h2.resp-accordion:first-child {
 }
 .newsletter-container {
   /* background: #7f7de0 url(../images/bgr-newsletter-container.png); */
-  background: #141636;
+  background: #0f0e22;
   background-repeat: no-repeat;
   background-position: center 0;
   -webkit-background-size: cover;
@@ -2486,8 +2514,8 @@ h2.resp-accordion:first-child {
 .huge-container {
   position: relative;
   z-index: 4;
-  background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
-   color: white;
+  background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
+  color: white;
 }
 .huge-container:before {
   /* background: url(../images/bgr-huge-left.png) no-repeat 0 0; */
@@ -4342,7 +4370,7 @@ button.timeline-nav-button:focus {
 /*  43.footer        */
 /*-------------------*/
 .footer-container {
-  background: #141636;
+  background: #0f0e22;
 }
 
 .footer-container2 {

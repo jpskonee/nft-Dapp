@@ -3,18 +3,33 @@ import img4 from "../assets/img/5.jpeg";
 import SectionHeader from "./SectionHeader";
 import BenefitSection from "./BenefitSection";
 import FreqAskedQuestionNew from "./FreqAskedQuestionNew";
+import HeaderText from "../shared/HeaderText";
+import ColourHeaderText from "../shared/ColourHeaderText";
 
 function ContactPage() {
   return (
     <div>
       <section id="contact" class="contact">
-        <div  style={{marginTop: "10rem"}} class="container" data-aos="fade-up">
-          <SectionHeader
-            heading="Sign up for more info"
-            slogan="In depth product info, roadmap, collaborations, pre sale date"
-          />
+        <div
+          style={{ marginTop: "10rem", marginBottom: "2rem" }}
+          class="container"
+          data-aos="fade-up"
+        >
+          <div
+            style={{
+              fontSize: "2.8rem",
+              marginBottom: "3rem",
+              fontFamily: "revert",
+            }}
+          >
+            <HeaderText
+              color="white"
+              align="center"
+              text="SIGN UP FOR MORE INFROMATION"
+            />
+          </div>
 
-          <div  class="row">
+          <div class="row">
             <div
               class="col-lg-5 d-flex align-items-stretch"
               data-aos="fade-up"

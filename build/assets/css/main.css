@@ -355,13 +355,13 @@ header ol {
   z-index: 9999;
 }
 #loading {
-  background-color: #201e4b;
   height: 100%;
   width: 100%;
   position: fixed;
   z-index: 1;
   margin-top: 0px;
   top: 0px;
+  background: #0f0e22;
 }
 #loading-center {
   width: 100%;
@@ -1431,7 +1431,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 /*  13.timeline        */
 /*---------------------*/
 .roadmap-container {
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
 }
 
 .road-map-timeline {
@@ -1830,7 +1830,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 /*----------------------------------*/
 .faq {
 
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
 }
 ul.resp-tabs-list,
 
@@ -2486,10 +2486,11 @@ h2.resp-accordion:first-child {
 .huge-container {
   position: relative;
   z-index: 4;
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+   color: white;
 }
 .huge-container:before {
-  background: url(../images/bgr-huge-left.png) no-repeat 0 0;
+  /* background: url(../images/bgr-huge-left.png) no-repeat 0 0; */
   -webkit-background-size: cover;
   background-size: cover;
   width: 567px;
@@ -2501,7 +2502,7 @@ h2.resp-accordion:first-child {
   z-index: -1;
 }
 .huge-container:after {
-  background: url(../images/bgr-huge-right.png) no-repeat 0 0;
+  /* background: url(../images/bgr-huge-right.png) no-repeat 0 0; */
   -webkit-background-size: cover;
   background-size: cover;
   width: 450px;
@@ -2526,13 +2527,13 @@ h2.resp-accordion:first-child {
   box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.1);
 }
 .pbl-col-info h4 {
-  color: #222;
+  color: white;
   font-size: 22px;
   line-height: 31px;
   font-weight: 500;
 }
 .pbl-col-info p {
-  color: #222;
+  color: white;
   font-size: 18px;
   line-height: 27px;
   padding-bottom: 10px;
@@ -4342,25 +4343,13 @@ button.timeline-nav-button:focus {
 /*-------------------*/
 .footer-container {
   background: #141636;
-  padding: 0px 0 5px 0;
 }
-.footer-curve {
-  position: relative;
-}
-.footer-curve:before {
-  /* background: url(../images/bgr-footer.png) no-repeat center 0 / cover; */
-  width: 100%;
-  height: 79px;
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -78px;
-}
+
 .footer-container2 {
-  padding-top: 254px;
+  /* padding-top: 254px; */
 }
 .footer-container3 {
-  padding-top: 104px;
+  /* padding-top: 104px; */
 }
 .footer-unicrypt {
   max-width: 370px;
@@ -4368,7 +4357,7 @@ button.timeline-nav-button:focus {
 }
 .footer-col {
   padding-right: 5px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 .footer-logo {
   max-width: 150px;

@@ -1,6 +1,7 @@
 import React from "react";
 // import NavbarModal from "./NavbarModal";
 import { Link } from "react-router-dom";
+import ColourTag from "../shared/ColourTag";
 
 function NavBar() {
   // const [mobi, setMobil] = useState(false);
@@ -15,11 +16,19 @@ function NavBar() {
       style={{
         background: "#0f0e22",
         position: "fixed",
+        display: "flex",
+        alignItems: "center",
       }}
       id="header"
       className="d-flex align-items-center "
     >
-      <div class="container-fluid container-xxl d-flex align-items-center">
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+        }}
+        class="container-fluid container-xxl d-flex align-items-center"
+      >
         <div id="logo" className="me-auto">
           <a href="/" className="scrollto">
             <img
@@ -32,34 +41,26 @@ function NavBar() {
         </div>
 
         <nav id="navbar" className="navbar order-last order-lg-0">
-          <ul>
-            <li>
-              <a class="nav-link scrollto active" href="/">
-                Home
-              </a>
-            </li>
-            <li>
-              <Link  to="roadmap">
-              <a class="nav-link scrollto" href="#toSchedule">
-                RoadMap
-              </a>
-              </Link>
-            </li>
+          <ul
+            style={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
             <li>
               <Link to="/contact">
-              <a class="nav-link scrollto" href="#toContact">
-               Join Now
-              </a>
+                <a href="#toContact">
+                  <ColourTag text="Join Now" />
+                </a>
               </Link>
             </li>
             <li>
               <a
-                class="nav-link scrollto"
                 href="https://testnets.opensea.io/assets/0xc073081d0c277ee6c3880326d67f43a7a91e5b31/2"
                 target={"_blank"}
                 rel="noreferrer"
               >
-                Buy On Opensea
+                <ColourTag text="Buy On Opensea" />
               </a>
             </li>
 
@@ -113,9 +114,19 @@ function NavBar() {
         </nav>
 
         {/* {mobi && <NavbarModal />} */}
-        <Link to="app">
-          <a class="buy-tickets scrollto" href="#toShop">
-            CONNECT WALLET
+        <Link
+          style={{
+            display: "flex",
+            alignItems: "center",
+          }}
+          to="app"
+        >
+          <a className="scrollto" href="#toShop">
+            <ColourTag
+              color1="#131DF4"
+              color2="#FF006A"
+              text="Connect Wallet"
+            />
           </a>
         </Link>
       </div>

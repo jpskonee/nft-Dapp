@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import VideoModal from "../partials/VideoModal";
 import ReactTypingEffect from "react-typing-effect";
+import ColourTag from "../shared/ColourTag";
 import { Link } from "react-router-dom";
 
 function HeadBanner() {
@@ -16,7 +17,7 @@ function HeadBanner() {
             <br />
             NFT KEYCHAIN
           </h1>
-          <p class="mb-4 pb-0">
+          <p style={{ color: "gray" }} class="mb-4 pb-0">
             Display your favorite NFT, advertise the next BIG project, share
             emergency documents
           </p>
@@ -30,9 +31,11 @@ function HeadBanner() {
             {" "}
           </a>
           <Link to="/app">
-            <a href="/" class="about-btn scrollto">
+            {/* <a href="/" class="about-btn scrollto">
               BUY NOW
-            </a>
+            </a> */}
+
+            <ColourTag color1="#131DF4" color2="#FF006A" text=" BUY NOW" />
           </Link>
           <div id="toShop"></div>
         </div>

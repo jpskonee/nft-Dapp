@@ -1,0 +1,39 @@
+.colour-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 18rem;
+  min-width: 18rem;
+  border-radius: 2rem;
+  padding: 1rem 1rem;
+  color: rgb(68, 64, 64);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+
+  @media screen and (max-width: 1050px) {
+    max-width: 13rem;
+    min-width: 13rem;
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 770px) {
+    // max-width: 13rem;
+    min-width: 75%;
+  }
+  @media screen and (max-width: 450px) {
+    max-width: 9rem;
+    min-width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+.colour-btn:hover {
+  opacity: 0.8;
+}
+
+.colour-btn:active {
+  opacity: 0.8;
+}

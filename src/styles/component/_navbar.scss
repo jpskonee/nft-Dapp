@@ -1,5 +1,9 @@
 .navbar {
   padding: 0;
+
+  @media screen and (max-width: 450px) {
+    display: none;
+  }
 }
 
 .navbar ul {
@@ -16,7 +20,6 @@
 
 .navbar > ul > li {
   white-space: nowrap;
-  padding: 10px 0 10px 12px;
 }
 
 .navbar a,
@@ -46,9 +49,9 @@
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: -6px;
+  bottom: -2px;
   left: 0;
-  background-color: #131df4;
+  background: linear-gradient(80deg, #2201e0, #aa0404);
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -95,12 +98,6 @@
 
 .navbar .dropdown ul a i {
   font-size: 12px;
-}
-
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
-  color: #131df4;
 }
 
 .navbar .dropdown:hover > ul {
@@ -199,12 +196,6 @@
   color: #0c0e22;
 }
 
-.navbar-mobile a:hover,
-.navbar-mobile .active,
-.navbar-mobile li:hover > a {
-  color: #131df4;
-}
-
 .navbar-mobile .getstarted {
   margin: 15px;
 }
@@ -231,12 +222,6 @@
 
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
-}
-
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover > a {
-  color: #131df4;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {

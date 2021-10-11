@@ -6,8 +6,8 @@ $grey: #eef0f2;
 $black: #353840;
 
 body {
- 
-  background: #191628;
+  background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
+  background-color: #171129;
 }
 
 @import "./component/navbar";
@@ -18,3 +18,6 @@ body {
 @import "./component/sectionheader";
 @import "./component/whatwedo";
 @import "./component/dapp";
+@import "./shared/colour-tag";
+@import "./shared/desp-text";
+@import "./shared/colour-header-text";

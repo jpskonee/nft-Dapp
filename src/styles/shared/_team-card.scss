@@ -1,0 +1,71 @@
+.team-card {
+  position: relative;
+
+  .team-img {
+    border-radius: 100%;
+    width: 274px;
+    height: 274px;
+
+    @media screen and (max-width: 1050px) {
+      width: 220px;
+      height: 220px;
+    }
+    @media screen and (max-width: 770px) {
+      width: 250px;
+      height: 250px;
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 40vw;
+      height: 40vw;
+    }
+    @media screen and (max-width: 330px) {
+      width: 40vw;
+      height: 40vw;
+    }
+  }
+
+  .team-name {
+    border-radius: 2rem;
+    padding: 0.5rem 0.9rem;
+    color: black;
+    border: 0.65rem solid black;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    bottom: -0.8rem;
+    left: 1.3rem;
+    right: 0;
+    font-size: 1.3rem;
+    text-align: center;
+    max-width: 180px;
+
+    @media screen and (max-width: 1050px) {
+      padding: 0.5rem 0.2rem;
+      min-width: 190px;
+      left: 0.6rem;
+      border: 0.65rem solid black;
+    }
+    @media screen and (max-width: 770px) {
+      padding: 0.8rem 0.6rem;
+      border: 0.5rem solid black;
+    }
+    @media screen and (max-width: 450px) {
+      padding: 0.4rem 0rem;
+      border: 0.3rem solid black;
+      left: 0.5rem;
+      font-size: 1rem;
+      min-width: 100px;
+      bottom: -0.5rem;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 0.9rem;
+      min-width: 100px;
+      left: 0rem;
+    }
+
+    @media screen and (max-width: 330px) {
+      font-size: 0.8rem;
+    }
+  }
+}

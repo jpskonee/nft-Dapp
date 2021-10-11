@@ -11,6 +11,7 @@ import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import AlarmIcon from "@material-ui/icons/Alarm";
 import Countdown from "react-countdown";
 import CountDownClock from "./partials/CountDownClock";
+import ColourTag from "./shared/ColourTag";
 
 export const StyledButton = styled.button`
   padding: 8px;
@@ -93,12 +94,21 @@ function App() {
   return (
     <div className="shop-base">
       {blockchain.account === "" || blockchain.smartContract === null ? (
-        <Grid style={{display: "flex", jusitfyContents: "center", alignItems: "center"}} container>
+        <Grid
+          style={{
+            display: "flex",
+            jusitfyContents: "center",
+            alignItems: "center",
+          }}
+          container
+        >
           <Grid item md={7} xs={12}>
             {" "}
-            <div className="connect-div wow fadeInLeft"
-        data-wow-duration="1s"
-        data-wow-delay="0.7s">
+            <div
+              className="connect-div wow fadeInLeft"
+              data-wow-duration="1s"
+              data-wow-delay="0.7s"
+            >
               <div>
                 <img className="connect-img" alt={"logo"} src={icon} />
               </div>
@@ -107,13 +117,17 @@ function App() {
                 Connect to the Ethereum Rinkeby network
               </div>
               <div
-                className="connect-btn"
                 onClick={(e) => {
                   e.preventDefault();
                   dispatch(connect());
                 }}
+                style={{ marginTop: "0.8rem" }}
               >
-                CONNECT
+                <ColourTag
+                  color1="#131DF4"
+                  color2="#FF006A"
+                  text="Connect Wallet"
+                />
               </div>
               {blockchain.errorMsg !== "" ? (
                 <div className="connect-error-msg">{blockchain.errorMsg}</div>
@@ -205,7 +219,7 @@ function App() {
                             <div
                               className="mint-counter-btn"
                               onClick={() => {
-                                if (_amount < 15) {
+                                if (_amount < 30) {
                                   setAmount(_amount + 1);
                                 }
                               }}

@@ -3855,24 +3855,26 @@ button.timeline-nav-button:focus {
 /*-------------------*/
 .footer-container {
   background: #4845b4;
-  padding: 178px 0 5px 0; }
+  padding: 0px 0 5px 0; }
 
 .footer-curve {
   position: relative; }
   .footer-curve:before {
     background: url(../images/bgr-footer.png) no-repeat center 0/cover;
     width: 100%;
-    height: 79px;
+    /* height: 79px; */
     content: "";
     position: absolute;
     left: 0;
     top: -78px; }
 
 .footer-container2 {
-  padding-top: 254px; }
+  /* padding-top: 254px;  */
+}
 
 .footer-container3 {
-  padding-top: 104px; }
+  /* padding-top: 104px;  */
+}
 
 .footer-unicrypt {
   max-width: 370px;
